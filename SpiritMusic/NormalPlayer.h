@@ -60,5 +60,4 @@ private:
     MiniPlayer *miniplayer;//存储MiniPlayer类
     MusicPage *musicpage;//存储MusicPage
 };
-
 #endif // NORMALPLAYER_H
