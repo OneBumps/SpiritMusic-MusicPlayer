@@ -1,0 +1,54 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>res/logo.svg</file>
+    </qresource>
+    <qresource prefix="/WindowControls">
+        <file>res/close.svg</file>
+        <file>res/maximize.svg</file>
+        <file>res/maxToNormal.svg</file>
+        <file>res/minimize.svg</file>
+        <file>res/miniToNormal.svg</file>
+        <file>res/normalToMini.svg</file>
+        <file>res/down.svg</file>
+        <file>res/up.svg</file>
+        <file>res/setting.svg</file>
+    </qresource>
+    <qresource prefix="/MiniList"/>
+    <qresource prefix="/MiniPlayer/Search">
+        <file>res/search.svg</file>
+        <file>res/searchoption.svg</file>
+    </qresource>
+    <qresource prefix="/MusicControls">
+        <file>res/dislike.svg</file>
+        <file>res/like.svg</file>
+        <file>res/mute.svg</file>
+        <file>res/pause.svg</file>
+        <file>res/playmusic.svg</file>
+        <file>res/playmusic-danquxunhuan.svg</file>
+        <file>res/playmusic-last.svg</file>
+        <file>res/playmusic-next.svg</file>
+        <file>res/playmusic-xunhuanbofang.svg</file>
+        <file>res/sound.svg</file>
+        <file>res/playmusic-bowanzanting.svg</file>
+    </qresource>
+    <qresource prefix="/Dialog">
+        <file>res/right.svg</file>
+        <file>res/wrong.svg</file>
+    </qresource>
+    <qresource prefix="/MiniPlayer/listOperation">
+        <file>res/addList.svg</file>
+        <file>res/delete.svg</file>
+        <file>res/rename.svg</file>
+    </qresource>
+    <qresource prefix="/NormalPlayer/FileOperation">
+        <file>res/addFile.svg</file>
+        <file>res/manage.svg</file>
+    </qresource>
+    <qresource prefix="/background"/>
+    <qresource prefix="/MniPlayer/changeFrame">
+        <file>res/backgroundbtn.svg</file>
+    </qresource>
+    <qresource prefix="/backgroun">
+        <file>background/background.png</file>
+    </qresource>
+</RCC>

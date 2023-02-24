@@ -1,0 +1,4 @@
+/*封面图片*/
+QPushButton#musicPicture{
+    border-image: url(:/Icon/res/logo.svg);
+}

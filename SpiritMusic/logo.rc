@@ -1,0 +1,2 @@
+//给程序加入Logo
+IDI_ICON1 ICON DISCARDABLE "logo.ico"

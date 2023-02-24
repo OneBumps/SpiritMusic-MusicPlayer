@@ -1,0 +1,214 @@
+/*除了遮罩外的全局*/
+/*全局背景颜色*/
+/*-------------背景图片---------------*/
+
+QWidget#WindowFrame{
+    border-image: url(:/backgroun/background/background.png);
+}
+QWidget#InitPlayer{
+    border-image: url(:/backgroun/background/background.png);
+}
+/*AddListDialog*/
+QDialog#AddListDialog{
+    border-image: url(:/backgroun/background/background.png);
+}
+
+/*-------------WindowFrame---------------*/
+/*白底遮罩*/
+QFrame#BaseFrame{
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+/*-------------按钮全局无边框---------------*/
+QPushButton{
+    border: 0px;
+}
+/*-------------StartMask---------------*/
+/*白底遮罩*/
+QFrame#StartMaskFrame{
+    background-color: rgba(255,255,255,0.5);
+}
+
+/*--------------ui_MiniPlayer--------------*/
+/*音乐搜索框*/
+QLineEdit#musicSearch{
+    background: transparent;
+}
+/*音乐列表框架边框*/
+QFrame#frame_musicList{
+    border: 2px solid black;
+    border-radius: 35px;
+}
+/*音乐列表*/
+QListWidget#MiniPlayer_showList{
+    background: transparent;
+}
+/*音乐封面*/
+QPushButton#musicPicture{
+    border-radius: 50%;
+}
+/*List列表*/
+QListWidget#MiniPlayer_showList::item:hover{/*鼠标经过*/
+        background-color: transparent;
+        border: 3px solid rgb(121,112,52);
+        border-radius: 15px;
+}
+QListWidget#MiniPlayer_showList::item:selected{/*选中后*/
+    background: transparent;
+    border: 3px solid rgb(121,112,52);
+    border-radius: 15px;
+}
+
+/*-------------ui_NormalPlayer---------------*/
+/*音乐进度条*/
+QSlider#slider_control::groove:horizontal{/*滑动槽样式*/
+    border-radius: 2px;
+    height: 1px;
+    margin: 10px 0px;/*可以使得在线条周边点击*/
+    /*未划过距离的样式*/
+    background:rgba(0,0,0,80);
+}
+QSlider#slider_control::handle:horizontal{/*定义滑块样式*/
+    /*宽和高为margin-top/bottom的两倍*/
+    width:  6px;
+    height: 4px;
+    margin: -3px 0px;
+    border-radius: 3px;
+    background: rgb(130,200,250);
+}
+QSlider#slider_control::sub-page:horizontal{/*定义滑过距离的样式*/
+    margin: 10px 0;/*可以使得在线条周边点击*/
+    border-radius: 2px;
+    background:qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #87CEFA, stop:1 #004080);
+}
+QSlider#slider_control::groove:horizontal:hover{/*鼠标经过滑动条时槽变大*/
+    height: 5px;
+}
+/*音量框架*/
+QFrame#NormalPlayer_frame_volume{
+    border: 3px solid;
+    border-radius: 45px;
+}
+/*音量进度条*/
+QSlider#slider_volume::groove:horizontal{/*滑动槽样式*/
+    border-radius: 4px;
+    height: 8px;
+    /*未划过距离的样式*/
+    background:rgba(0,0,0,80);
+}
+QSlider#slider_volume::handle:horizontal{/*定义滑块样式*/
+    /*宽和高为margin-top/bottom的两倍*/
+    width:  16px;
+    height: 0px;
+    margin: -4px 0px;
+    border-radius: 8px;
+    background: rgb(130,200,250);
+}
+QSlider#slider_volume::sub-page:horizontal{/*定义滑过距离的样式*/
+    border-radius: 4px;
+    background:qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #87CEFA, stop:1 #004080);
+}
+/*音乐播放和暂停按钮*/
+QPushButton#playControl{
+    image: url(:/MusicControls/res/playmusic.svg);
+}
+QPushButton#playControl:checked{
+    image: url(:/MusicControls/res/pause.svg);
+}
+
+
+/*--------------ui_AddListDialog--------------*/
+
+/*设置label样式*/
+QLabel#label_wrong{
+    color: red;
+}
+/*设置LineEdit透明*/
+QLineEdit#listName{
+    background: transparent;
+}
+/*白底遮罩*/
+QFrame#AddListDialog_frame{
+    background-color: rgba(255,255,255,0.5);
+}
+/*--------------ShowPage--------------*/
+/*Frame框架*/
+QFrame#ShowPage_tableFrame{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+QFrame#ShowPage_tableFrame QWidget{
+    /*为了内部(表头)透明*/
+    background-color: transparent;
+}
+/*表格样式*/
+QTableView#ShowPage_tableView{
+    background: transparent;
+    min-height: 100px;
+}
+/*表头透明*/
+QTableView#ShowPage_tableView QHeaderView::section:horizontal{
+    background: transparent;
+}
+/*表格选中时的样式*/
+QTableView#ShowPage_tableView::item:selected {
+    background: rgba(255,255,255,0.4);
+    /*Item项字体颜色*/
+    color: rgb(108, 149, 249);
+}
+/*表格滚动条常规设置*/
+QTableView#ShowPage_tableView QScrollBar::add-page{/*滚动区域样式-未划过区域*/
+    background: transparent;
+}
+QTableView#ShowPage_tableView QScrollBar::sub-page{/*滚动区域样式-已划过区域*/
+    background: transparent;
+}
+/*垂直表格滑动条设置*/
+QTableView#ShowPage_tableView QScrollBar:vertical{/*垂直滚动条框架*/
+    background: transparent;
+    padding: 20px 2px;
+    border-radius: 4px;
+}
+QTableView#ShowPage_tableView QScrollBar::handle:vertical{/*滑块*/
+    background: rgb(58, 64, 85);
+    border-radius: 6px;
+    min-height: 30px;
+}
+QTableView#ShowPage_tableView QScrollBar::add-line:vertical{/*下降箭头*/
+    image: url(:/WindowControls/res/down.svg);
+}
+
+QTableView#ShowPage_tableView QScrollBar::sub-line:vertical{/*上升箭头*/
+    image: url(:/WindowControls/res/up.svg);
+}
+/*横向表格滑动条设置*/
+QTableView#ShowPage_tableView QScrollBar:horizontal{/*横向滚动条框架*/
+    background: transparent;
+    padding: 2px 20px;
+}
+QTableView#ShowPage_tableView QScrollBar::handle:horizontal{/*滑块*/
+    background: rgb(58, 64, 85);
+    border-radius: 6px;
+    min-width: 30px;
+}
+
+
+/*--------------MusicPage--------------*/
+/*歌词界面透明*/
+QTextEdit#MusicPage_lyric{
+    background: transparent;
+}
+/*--------------ShowPage--------------*/
+/*删除按钮*/
+QPushButton#ShowPage_btn_deleteMusic{
+    image: url(:/MiniPlayer/listOperation/res/delete.svg);
+}
+QPushButton#ShowPage_btn_deleteMusic:checked{
+    image: url(:/Dialog/res/right.svg);
+}
+/*--------------ManageMusicDialog--------------*/
+#ManageMusicDialog_musiclist{
+    background: transparent;
+}

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Frame">
+        <file>res/Cover.qss</file>
+        <file>res/SpiritMusic.qss</file>
+    </qresource>
+    <qresource prefix="/Icon">
+        <file>res/Icon.qss</file>
+    </qresource>
+</RCC>

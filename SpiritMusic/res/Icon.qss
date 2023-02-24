@@ -1,0 +1,18 @@
+/*静音按钮按下弹起的设置*/
+QPushButton#mute{
+    image: url(:/MusicControls/res/sound.svg);
+}
+QPushButton#mute:checked{
+    image: url(:/MusicControls/res/mute.svg);
+}
+/*播放顺序按钮图片*/
+QPushButton#order{
+    image: url(:/MusicControls/res/playmusic-xunhuanbofang.svg)
+}
+/*我喜欢按钮的设置*/
+QPushButton#like{
+    image: url(:/MusicControls/res/like.svg);
+}
+QPushButton#like:checked{
+    image: url(:/MusicControls/res/dislike.svg);
+}
