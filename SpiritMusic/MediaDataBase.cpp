@@ -18,7 +18,6 @@ void MediaDataBase::connectDB()
     db.setDatabaseName("./SpiritMusic.db");
     db.setHostName("localhost");
     db.setUserName("OneBumps");
-    db.setPassword("98428942");
     if (db.open())
     {
         qDebug() << "连接SpiritMusic数据库成功";
